@@ -1,4 +1,4 @@
-package cz.amware.firstjava;
+package cz.amware.firstjava.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

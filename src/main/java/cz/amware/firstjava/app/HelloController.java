@@ -1,4 +1,4 @@
-package cz.amware.firstjava;
+package cz.amware.firstjava.app;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
