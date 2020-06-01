@@ -19,31 +19,29 @@ import javax.persistence.SequenceGenerator;
  * @author m.ambros
  */
 @Entity
-@Table(name="t_cocktails", schema="co")
-public class TCocktail implements Serializable {
+@Table(name="t_ingredients", schema="co")
+public class TIngredient implements Serializable {
     
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="t_cocktails_seq")
-    @SequenceGenerator(name="t_cocktails_seq", sequenceName="co.t_cocktails_cocktail_id_seq", allocationSize=1, initialValue=0)
-    @Column(name="cocktail_id",nullable = false)
-    private Long cocktailId;
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="t_ingredients_seq")
+    @SequenceGenerator(name="t_ingredients_seq", sequenceName="co.t_ingredients_ingredient_id_seq", allocationSize=1, initialValue=0)
+    @Column(name="ingredient_id",nullable = false)
+    private Long ingredientId;
     
     @Column(name="name",nullable = false)
     private String name;
     
-    @Column(name="url",nullable = false)
-    private String url;
     
-    public TCocktail(){
+    public TIngredient(){
         super();
     }
 
-    public Long getCocktailId() {
-        return cocktailId;
+    public Long getIngredientId() {
+        return ingredientId;
     }
 
-    public void setCocktailId(Long cocktailId) {
-        this.cocktailId = cocktailId;
+    public void setIngredientId(Long ingredientId) {
+        this.ingredientId = ingredientId;
     }
 
     public String getName() {
@@ -54,16 +52,6 @@ public class TCocktail implements Serializable {
         this.name = name;
     }
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-    
     
     
 }
-
-

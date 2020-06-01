@@ -1,4 +1,4 @@
-package cz.amware.firstjava;
+package cz.amware.firstjava.app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
